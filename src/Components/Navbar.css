@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#34495E;
+    padding: 10px;
+}
+nav  div h3{
+   
+    background-color:#34495E;
+    color: rgb(238, 233, 232);
+    margin-bottom: -1px;
+    padding-bottom: 30px;
+    font-size:30px;
+    padding-left: 500px;
+    
+    
+}
+
+span{
+   
+    background-color:#131514 ;
+    padding: 8px;
+    color: white;
+    padding-right: 10px;
+    border-radius: 11px;
+}
+span:hover{
+    background-color: #9077a8;
+    color: black;
+}
