@@ -88,17 +88,22 @@ function DashBoard() {
 
     if(student.assignTeacher >0){
       let v1 = await axios.delete(`https://64a24575b45881cc0ae4f17b.mockapi.io/teacher/${id}`)
+      console.log(v1);
       setDMloading(false)
       loadingStudent();
       loadingTeacher();
     }
     else{
+      
       let v1 = await axios.delete(`https://64a24575b45881cc0ae4f17b.mockapi.io/teacher/${id}`)
+      
       let data = student.filter((item)=>item.assignTeacher===name);
       console.log(data);
+      console.log(v1);
       let v2;
       for(let i=0;i<data.length;i++){
         console.log(data[i].id);
+        console.log(v2);
         v2=await axios.put(`https://64a24575b45881cc0ae4f17b.mockapi.io/student/${data[i].id}`,{
           id:data[i].id,
           name:data[i].name,
